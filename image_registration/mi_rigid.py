@@ -1,7 +1,7 @@
 import SimpleITK as sitk
 import os
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 def print_image_info(title, image):
@@ -74,16 +74,16 @@ def automatic_registration(fixed_image, moving_image, out_dir):
     )
     final_transform = final_rigid_transform
 
-    # plt.figure(figsize=(10, 6))
-    # plt.plot(metric_values, marker="o", linestyle="-", color="b", markersize=4)
-    # plt.title("Mattes Mutual Information Convergence", fontsize=14)
-    # plt.xlabel("Iteration", fontsize=12)
-    # plt.ylabel("Metric Value (MI)", fontsize=12)
-    # plt.grid(True, linestyle="--", alpha=0.7)
+    plt.figure(figsize=(10, 6))
+    plt.plot(metric_values, marker="o", linestyle="-", color="b", markersize=4)
+    plt.title("Mattes Mutual Information Convergence", fontsize=14)
+    plt.xlabel("Iteration", fontsize=12)
+    plt.ylabel("Metric Value (MI)", fontsize=12)
+    plt.grid(True, linestyle="--", alpha=0.7)
 
-    # plot_path = os.path.join(out_dir, "registration_convergence.png")
-    # plt.savefig(plot_path)
-    # print(f"Convergence plot saved as: {plot_path}")
+    plot_path = os.path.join(out_dir, "registration_convergence.png")
+    plt.savefig(plot_path)
+    print(f"Convergence plot saved as: {plot_path}")
 
     # print result diagnosis
     print(

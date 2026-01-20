@@ -1,4 +1,7 @@
 | 分階 | Part Description            | HHPN        | Type    | Q'ty | Specification     | Version | Vendor                    | Note                     |
 |------|-----------------------------|-------------|---------|------|-------------------|---------|---------------------------|--------------------------|
-| 1    | Medical Algorithm Integration Framework | 701-0001-00 | Library | 1    | 本案主程式        | 0.1.0   | 公司名稱                  | 自研代碼 (In-house)      |
-| 2    | Python Interpreter          | 801-0001-00 | Runtime | 1    | 開發與運行環境    | >=3.12  | Python Software Foundation| SOUP                     |
+| 1    | Medical Algorithm Integration Framework | 701-0001-00 | Library | 1    | 本案主程式        | 0.2.1   | 公司名稱                  | 自研代碼 (In-house)      |
+| 2    | Python Interpreter          | 801-0001-00 | Runtime | 1    | 開發與運行環境    | 3.12  | Python Software Foundation| SOUP                     |
+|3	   | SimpleITK	                 | 801-0002-00 | SOUP    | 1	| 影像處理與配準核心庫 | 2.5.3 | SimpleITK Consortium |	SOUP |
+|3	| NumPy	| 801-0003-00	| SOUP	| 1	| 矩陣運算與基礎資料結構	| 2.4.1 | 	NumPy Developers	| SOUP |
+| 3	| Matplotlib	| 801-0004-00	| SOUP	| 1	| 2D 繪圖函式庫	| 3.10.8	| Matplotlib Team | 	SOUP|
